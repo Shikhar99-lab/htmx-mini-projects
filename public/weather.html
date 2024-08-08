@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@2.0.1"
+        integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather</title>
+</head>
+
+<body class="bg-blue-900 text-white min-h-screen flex items-center justify-center">
+    <div class="text-center">
+        <h1 class="text-xl font-bold mb-4">
+            Weather
+        </h1>
+        <p class="text-5xl"> <span hx-get="/weather" hx-trigger="every 1s" hx-swap="innerHTML">Loading...</span></p>
+    </div>
+</body>
+
+</html>
